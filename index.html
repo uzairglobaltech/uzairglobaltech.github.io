@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Freevence — Premium App Studio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* ---------- GLOBAL LUXURY THEME ---------- */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #0c0c0c;
+    color: #fff;
+    overflow-x: hidden;
+}
+* { box-sizing: border-box; }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: gold; border-radius: 10px; }
+
+/* ---------- NAVBAR ---------- */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(12px);
+    background: rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgba(255,215,0,0.2);
+    z-index: 999;
+}
+nav h1 {
+    font-size: 26px;
+    background: linear-gradient(90deg, #ffe38e, #d4af37);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+nav a {
+    color: #fff;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: gold;
+    text-shadow: 0 0 10px gold;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+    position: relative;
+}
+.hero::after {
+    content:"";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+.hero h2 {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.hero p {
+    margin-top: 12px;
+    font-size: 19px;
+    opacity: 0.9;
+}
+.cta-btn {
+    margin-top: 25px;
+    padding: 14px 32px;
+    background: linear-gradient(90deg, #d4af37, #ffdd78);
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cta-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px gold;
+}
+
+/* ---------- GLASS CARDS ---------- */
+.section {
+    padding: 100px 10%;
+}
+.sec-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: gold;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+}
+.card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,215,0,0.2);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(255,215,0,0.3);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid rgba(255,215,0,0.2);
+    margin-top: 60px;
+}
+footer p {
+    opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>Freevence</h1>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>We Build the Future of Mobile Experiences</h2>
+        <p>Freevence is a premium app studio crafting high-end apps with innovation, precision, and a vision to redefine digital excellence.</p>
+        <button class="cta-btn">Our Vision</button>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="sec-title">What We Stand For</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Pure Innovation</h3>
+            <p>We are building apps that go beyond the ordinary — unique, scalable, futuristic experiences.</p>
+        </div>
+        <div class="card">
+            <h3>Quality First</h3>
+            <p>From UI/UX to performance, we deliver unmatched quality designed to impress users worldwide.</p>
+        </div>
+        <div class="card">
+            <h3>Clean & Luxury Design</h3>
+            <p>Minimal, elegant, and premium visuals — giving our apps a world‑class identity.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="sec-title">Our Roadmap</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>⚡ Phase 1</h3>
+            <p>Establishing Freevence identity, premium design system, and internal development tools.</p>
+        </div>
+        <div class="card">
+            <h3>🚀 Phase 2</h3>
+            <p>Developing our first flagship apps — built for quality, not quantity.</p>
+        </div>
+        <div class="card">
+            <h3>🌍 Phase 3</h3>
+            <p>Scaling globally with a suite of Freevence-branded apps.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Freevence — All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
